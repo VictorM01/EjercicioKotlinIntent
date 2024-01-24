@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextNumberMAT"
+        android:layout_width="211dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="121dp"
+        android:ems="10"
+        android:hint="Matematicas"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumberFIS"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumberFIS"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumberFIS"
+        android:layout_width="211dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="66dp"
+        android:ems="10"
+        android:hint="Fisica"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberMAT" />
+
+    <EditText
+        android:id="@+id/editTextNumberQUI"
+        android:layout_width="212dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:hint="Quimica"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberFIS" />
+
+    <Button
+        android:id="@+id/btn_evaluar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="54dp"
+        android:text="Evaluar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberQUI" />
+</androidx.constraintlayout.widget.ConstraintLayout>
